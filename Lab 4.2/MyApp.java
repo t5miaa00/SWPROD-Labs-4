@@ -4,6 +4,7 @@ public class MyApp {
 		System.out.println("Product value is " + product.countValue());
 		product.printProduct();
 
+		product.changeBalance(220);
 		product.changePrice(3.15);
 		System.out.println("Product value is " + product.countValue());
 		product.printProduct();
@@ -25,7 +26,11 @@ class Product {
 		System.out.printf("Product %s, price %4.1f and balance %d pcs\n",
 		name,price,amount);
 	}
+
 	public void changePrice(double new_price) {
 		this.price = new_price;
+  }
+	public void changeBalance(int new_value) {
+		this.amount = new_value;
 	}
 }
