@@ -3,6 +3,9 @@ public class MyApp {
 		Product product = new Product("Edam", 3.3, 120);
 		System.out.println("Product value is " + product.countValue());
 		product.printProduct();
+
+		product.changeBalance(220);
+		product.printProduct();
 	}
 }
 class Product {
@@ -18,7 +21,10 @@ class Product {
 		return(amount * price);
 	}
 	public void printProduct() {
-		System.out.printf("Product %s, price %4.1f and balance %d pcs",
+		System.out.printf("Product %s, price %4.1f and balance %d pcs\n",
 		name,price,amount);
+	}
+	public void changeBalance(int new_value) {
+		this.amount = new_value;
 	}
 }
