@@ -1,0 +1,47 @@
+    1  :q
+    2  exit
+    3  history
+    4  rm histfile
+    5  rm .histfile
+    6  mkdir git/SWPROD
+    7  cd git/SWPROD
+    8  echo "# SWPROD-Labs-4" > README.md
+    9  git init
+   10  git add README.md
+   11  git commit -m "initial commit"
+   12  git remote add origin https://github.com/t5miaa00/SWPROD-Labs-4.git
+   13  git push origin master
+   14  java
+   15  cd Lab\ 4.2
+   16  javac MyApp.java
+   17  java MyApp.java
+   18  java MyApp.class
+   19  java MyApp
+   20  git push origin master
+   21  git add .
+   22  git commit -m 'Initial "MyApp.java" file added.'
+   23  git push origin master
+   24  git checkout b1
+   25  git branch add b1
+   26  git checkout -b b1
+   27  javac MyApp.java
+   28  java MyApp
+   29  javac MyApp.java
+   30  java MyApp
+   31  git add .
+   32  git commit -m "First change."
+   33  git push origin master
+   34  git push origin b1
+   35  git checkout master
+   36  git checkout -b b2
+   37  javac MyApp.java
+   38  java MyApp
+   39  git add .
+   40  git commit - "Second change."
+   41  git commit -m "Second change."
+   42  git push origin b2
+   43  git checkout master
+   44  git pull
+   45  git pull origin master
+   46  git branch -D b1
+   47  git branch -D b2
